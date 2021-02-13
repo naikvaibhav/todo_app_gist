@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+main{
+  min-height: 100vh;
+  background-color: rgb(221, 221, 221);
+  /* background-color: #e4fcf9; */
+}
+
+.colors-nav{
+  background-color: #4b89ac;
+}
+
+.card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-flat {
+    background-color: #4b89ac;
+    color: #ffff;
+}
+.btn:hover {
+  color: #ffff;
+  text-decoration: none;
+}
+
+.loginCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;  
+}
+/*start of media queries*/
+@media screen and (min-width: 768px) {
+  .loginCard {
+    width: 500px;
+    padding-top: 20%;
+    padding-bottom: 10%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .loginCard {
+    width: 500px;
+    padding-top: 20%;
+    padding-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .loginCard {
+    width: 300px;
+    padding-top: 20%;
+    padding-bottom: 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .loginCard {
+    padding-top: 20%;
+    padding-bottom: 10%;
+  }
+}
+/*end of media queries*/
+
+
+
+.todo {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+  /* background-color: #e4fcf9; */
+  /* padding: 0.4%; */
+}
+
+
+
+.dropdown-toggle::after, .dropleft .dropdown-toggle::after, .dropright .dropdown-toggle::after, .dropup .dropdown-toggle::after {
+  display: none;
+}
