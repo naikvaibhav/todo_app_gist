@@ -1,7 +1,12 @@
 # todo_app_gist
-A MERN stack todo application with feature to upload todo as a secret gist
+A MERN stack todo application with feature to upload todo as a secret gist. 
 
-Download the github code using the cmd "git clone https://github.com/naikvaibhav/todo_app_gist.git"\
+To check the hosted solution go to : http://todo.naikvaibhav.online
+
+To check the backend api go to http://apitodo.naikvaibhav.online
+
+Download the github code using the cmd "git clone https://github.com/naikvaibhav/todo_app_gist.git"
+
 This will get the backend folder, frontend folder and a README.md into your system
 
 ## The project is divided into two folders
