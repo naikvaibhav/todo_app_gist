@@ -20,7 +20,7 @@ ii) To run the backend code need to install the dependency package. To install t
 Example: todo_app_gist/backend$ npm install\
 iii) This will install all the packages and a node_modules folder will be created inside the backend folder.\
 iv) .env file has to be created inside the backend folder. the file has to be created with the name as '.env' inside the backend folder.\
-v) the .env file should have the following variables with respective values:\
+v) the .env file should have the following variables with respective values:
 
 ## example of the values
 PORT = 3001  //since the react app runs on port number 3000 by default,  a different port number has to be specified for the nodejs app\
@@ -28,13 +28,13 @@ CLIENT_ID = github client id credential\
 CLIENT_SECRET = github client secret credential\
 MONGODB_ATLAS_USERNAME = mongodb atlas user name\
 MONGODB_ATLAS__PASSWORD = mongodb atlas password\
-secretKey = abcdefghtvnfknfkn\
+secretKey = abcdefghtvnfknfkn
 
 vi) The database used for the backend is MongoDB. I have used mongodb atlas to store the data but if you want to install mongodb on your local system, then mongodb needs to be installed and the mongodb server has to be in the running state so that the backend can store the data.\
 Vii) all the configuration for the backend is present inside the appConfig.js file which is present inside the config folder. The api version, the url of the mongodb atlas being used, port number for the nodejs app is all specified within this file.\
 Viii) All the other major functionalities are present inside the 'src' folder. The 'src' folder consist of the routes, controllers, models, middlewares and libraries.\
-ix) The entry point for running the nodejs app is server.js. Running the cmd "node server.js" will start the nodejs app\
-the output got on the terminal after executing this is\
+ix) The entry point for running the nodejs app is server.js. Running the cmd "node server.js" will start the nodejs app
+the output got on the terminal after executing this is
 
 vaibhav@pop-os:~/Reactjs_Projects/todo_app_gist/backend$ node server.js{\
   port: '3001',\
@@ -62,24 +62,28 @@ v) the .env file should have the following variables with respective values:
 
 ## example of the values
 
-REACT_APP_CLIENT_ID = github client id\
+REACT_APP_CLIENT_ID = github client id
+
 // the env can be either development or production\
 REACT_APP_ENV = development 
 
 vi) Inside the src folder we have a file called the 'environment.js' we will have the BASE_URL being used based on the environment set in the .env file
-if the environment is production the backend api being used will be the one hosted on the server "http://apitodo.naikvaibhav.online/api/v1"\
-Vii) if the environment is set to development then the BASE_URL will the localhost backend server being run on the system. that is : "http://localhost:3001/api/v1"\
+if the environment is production the backend api being used will be the one hosted on the server "http://apitodo.naikvaibhav.online/api/v1"
+
+Vii) if the environment is set to development then the BASE_URL will the localhost backend server being run on the system. that is : "http://localhost:3001/api/v1"
+
 viii) All the generic components are defined inside the components folder present inside the "src" folder.
 ix) All the css as specified in the index.css file
 x) The entry point for running the react app is App.js. Go inside the frontend folder within the todo_App_gist folder and run the above the command. The web page will be displayed on the browser. Running the cmd "npm start" will start the Reactjs app.
 
 the output got after executing this is.
 
-vaibhav@pop-os:~/Reactjs_Projects/todo_app_gist/frontend$ npm start\
+vaibhav@pop-os:~/Reactjs_Projects/todo_app_gist/frontend$ npm start
 You can now view frontend in the browser.
 
-  Local:            http://localhost:3000\
-  On Your Network:  http://192.168.1.101:3000\
+  Local:            http://localhost:3000
+  
+  On Your Network:  http://192.168.1.101:3000
 
 
 xi) This output signifies that everything is running perfectly at the frontend level
