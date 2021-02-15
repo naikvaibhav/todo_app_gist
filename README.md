@@ -7,6 +7,13 @@ This will get the backend folder, frontend folder and a README.md into your syst
 ## The project is divided into two folders
 1. backend          2. frontend
 
+## To use github client secret key and the client id, need to create the OAuth app inside the github, Follow this article to create one.
+
+## If the project is being run on local system the Homepage url to be specified for the OAuth app is "http://localhost:3000" and the redirect url to be specified is "http://localhost:3000/login" 
+
+
+## If the project is being hosted on a server then  the Homepage url to be specified for the OAuth app is "http://todo.naikvaibhav.online" and the redirect url to be specified is "http://todo.naikvaibhav.online/login" 
+
 ## 1. backend
 i) The backend of the project is built using Node.js and express.\
 ii) To run the backend code need to install the dependency package. To install the dependency packages go to the todo_app_gist folder which is created after cloning the github and then traverse to the backend folder. Type the cmd "npm install"\ 
@@ -54,13 +61,32 @@ iii) This will install all the packages and a node_modules folder will be create
 iv) .env file has to be created inside the frontend folder. the file has to be created with the name as '.env' inside the frontend folder.\
 v) the .env file should have the following variables with respective values:\
 
-
 ## example of the values
 
-i) .env file has to be created inside the frontend folder. The path has to be frontend/.env\
-ii) the .env file should have two variables REACT_APP_CLIENT_ID and REACT_APP_ENV\
-iii) Open terminal and traverse to path where the todo_app_gist folder is present. --> Go to the frontend folder (todo_app_gist/frontend)\
-iv) Run the react app using the cmd "npm start"
+REACT_APP_CLIENT_ID = github client id
+// the env can be either development or production
+REACT_APP_ENV = development \
+
+vi) Inside the src folder we have a file called the 'environment.js' we will have the BASE_URL being used based on the environment set in the .env file
+if the environment is production the backend api being used will be the one hosted on the server "http://apitodo.naikvaibhav.online/api/v1"\
+Vii) if the environment is set to development then the BASE_URL will the localhost backend server being run on the system. that is : "http://localhost:3001/api/v1"\
+viii) All the generic components are defined inside the components folder present inside the "src" folder.
+ix) All the css as specified in the index.css file
+x) The entry point for running the react app is App.js. Go inside the frontend folder within the todo_App_gist folder and run the above the command. The web page will be displayed on the browser. Running the cmd "npm start" will start the Reactjs app. \
+
+the output got after executing this is. 
+
+vaibhav@pop-os:~/Reactjs_Projects/todo_app_gist/frontend$ npm start
+You can now view frontend in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.1.101:3000
 
 
+xi) This output signifies that everything is running perfectly at the frontend level
+
+
+
+
+HEnce by running both the frontend and the backend code on the localhost we can run the project locally on our systems.
 
