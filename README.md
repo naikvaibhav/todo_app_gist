@@ -88,5 +88,5 @@ xi) This output signifies that everything is running perfectly at the frontend l
 
 
 
-HEnce by running both the frontend and the backend code on the localhost we can run the project locally on our systems.
+Hence by running both the frontend and the backend code on the localhost we can run the project locally on our systems.
 
