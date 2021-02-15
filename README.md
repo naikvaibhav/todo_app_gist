@@ -23,10 +23,10 @@ iv) .env file has to be created inside the backend folder. the file has to be cr
 v) the .env file should have the following variables with respective values:\
 
 ## example of the values
-PORT = 3001  //since the react app runs on port number 3000 by default,  a different port number has to be specified for the nodejs app
-CLIENT_ID = github client id credential
-CLIENT_SECRET = github client secret credential
-MONGODB_ATLAS_USERNAME = mongodb atlas user name
+PORT = 3001  //since the react app runs on port number 3000 by default,  a different port number has to be specified for the nodejs app\
+CLIENT_ID = github client id credential\
+CLIENT_SECRET = github client secret credential\
+MONGODB_ATLAS_USERNAME = mongodb atlas user name\
 MONGODB_ATLAS__PASSWORD = mongodb atlas password\
 secretKey = abcdefghtvnfknfkn\
 
@@ -36,18 +36,18 @@ Viii) All the other major functionalities are present inside the 'src' folder. T
 ix) The entry point for running the nodejs app is server.js. Running the cmd "node server.js" will start the nodejs app\
 the output got on the terminal after executing this is\
 
-vaibhav@pop-os:~/Reactjs_Projects/todo_app_gist/backend$ node server.js{
-  port: '3001',
-  allowedCorsOrigin: '*',
-  environment: 'dev',
+vaibhav@pop-os:~/Reactjs_Projects/todo_app_gist/backend$ node server.js{\
+  port: '3001',\
+  allowedCorsOrigin: '*',\
+  environment: 'dev',\
   db: {
     uri: 'mongodb atls uri'
-  },
+  },\
   apiVersion: '/api/v1'
-}
-{"level":30,"time":1613414485610,"pid":50603,"hostname":"pop-os","timestamp":"2021-02-15T18:41:25.609Z","message":"server listening on port: 3001","origin":"serverOnListeningHandler","level":10}
-database connection open success
-{"level":30,"time":1613414487328,"pid":50603,"hostname":"pop-os","timestamp":"2021-02-15T18:41:27.328Z","message":"database connection open","origin":"database connection open handler","level":10}
+}\
+{"level":30,"time":1613414485610,"pid":50603,"hostname":"pop-os","timestamp":"2021-02-15T18:41:25.609Z","message":"server listening on port: 3001","origin":"serverOnListeningHandler","level":10}\
+database connection open success\
+{"level":30,"time":1613414487328,"pid":50603,"hostname":"pop-os","timestamp":"2021-02-15T18:41:27.328Z","message":"database connection open","origin":"database connection open handler","level":10}\
 (node:50603) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.\
 
 x) This output signifies that everything is running perfectly at the backend level
@@ -63,8 +63,8 @@ v) the .env file should have the following variables with respective values:\
 
 ## example of the values
 
-REACT_APP_CLIENT_ID = github client id
-// the env can be either development or production
+REACT_APP_CLIENT_ID = github client id\
+// the env can be either development or production\
 REACT_APP_ENV = development \
 
 vi) Inside the src folder we have a file called the 'environment.js' we will have the BASE_URL being used based on the environment set in the .env file
@@ -74,13 +74,13 @@ viii) All the generic components are defined inside the components folder presen
 ix) All the css as specified in the index.css file
 x) The entry point for running the react app is App.js. Go inside the frontend folder within the todo_App_gist folder and run the above the command. The web page will be displayed on the browser. Running the cmd "npm start" will start the Reactjs app. \
 
-the output got after executing this is. 
+the output got after executing this is. \
 
-vaibhav@pop-os:~/Reactjs_Projects/todo_app_gist/frontend$ npm start
-You can now view frontend in the browser.
+vaibhav@pop-os:~/Reactjs_Projects/todo_app_gist/frontend$ npm start\
+You can now view frontend in the browser.\
 
-  Local:            http://localhost:3000
-  On Your Network:  http://192.168.1.101:3000
+  Local:            http://localhost:3000\
+  On Your Network:  http://192.168.1.101:3000\
 
 
 xi) This output signifies that everything is running perfectly at the frontend level
