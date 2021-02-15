@@ -49,7 +49,6 @@ vaibhav@pop-os:~/Reactjs_Projects/todo_app_gist/backend$ node server.js{\
 database connection open success\
 {"level":30,"time":1613414487328,"pid":50603,"hostname":"pop-os","timestamp":"2021-02-15T18:41:27.328Z","message":"database connection open","origin":"database connection open handler","level":10}\
 (node:50603) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.\
-
 x) This output signifies that everything is running perfectly at the backend level
 
 
@@ -59,25 +58,25 @@ ii) To run the frontend code need to install the dependency package. To install 
 Example: todo_app_gist/frontend$ npm install\
 iii) This will install all the packages and a node_modules folder will be created inside the frontend folder.\
 iv) .env file has to be created inside the frontend folder. the file has to be created with the name as '.env' inside the frontend folder.\
-v) the .env file should have the following variables with respective values:\
+v) the .env file should have the following variables with respective values:
 
 ## example of the values
 
 REACT_APP_CLIENT_ID = github client id\
 // the env can be either development or production\
-REACT_APP_ENV = development \
+REACT_APP_ENV = development 
 
 vi) Inside the src folder we have a file called the 'environment.js' we will have the BASE_URL being used based on the environment set in the .env file
 if the environment is production the backend api being used will be the one hosted on the server "http://apitodo.naikvaibhav.online/api/v1"\
 Vii) if the environment is set to development then the BASE_URL will the localhost backend server being run on the system. that is : "http://localhost:3001/api/v1"\
 viii) All the generic components are defined inside the components folder present inside the "src" folder.
 ix) All the css as specified in the index.css file
-x) The entry point for running the react app is App.js. Go inside the frontend folder within the todo_App_gist folder and run the above the command. The web page will be displayed on the browser. Running the cmd "npm start" will start the Reactjs app. \
+x) The entry point for running the react app is App.js. Go inside the frontend folder within the todo_App_gist folder and run the above the command. The web page will be displayed on the browser. Running the cmd "npm start" will start the Reactjs app.
 
-the output got after executing this is. \
+the output got after executing this is.
 
 vaibhav@pop-os:~/Reactjs_Projects/todo_app_gist/frontend$ npm start\
-You can now view frontend in the browser.\
+You can now view frontend in the browser.
 
   Local:            http://localhost:3000\
   On Your Network:  http://192.168.1.101:3000\
