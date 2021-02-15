@@ -15,10 +15,16 @@ This will get the backend folder, frontend folder and a README.md into your syst
 ## If the project is being hosted on a server then  the Homepage url to be specified for the OAuth app is "http://todo.naikvaibhav.online" and the redirect url to be specified is "http://todo.naikvaibhav.online/login" 
 
 ## 1. backend
-i) The backend of the project is built using Node.js and express.\
-ii) To run the backend code need to install the dependency package. To install the dependency packages go to the todo_app_gist folder which is created after cloning the github and then traverse to the backend folder. Type the cmd "npm install"\ 
-Example: todo_app_gist/backend$ npm install\
-iii) This will install all the packages and a node_modules folder will be created inside the backend folder.\
+i) The backend of the project is built using Node.js and express.
+
+ii) To run the backend code need to install the dependency package. To install the dependency packages go to the todo_app_gist folder which is created after cloning the github and then traverse to the backend folder. 
+
+Type the cmd "npm install"
+
+Example: todo_app_gist/backend$ npm install
+
+iii) This will install all the packages and a node_modules folder will be created inside the backend folder.
+
 iv) .env file has to be created inside the backend folder. the file has to be created with the name as '.env' inside the backend folder.
 
 v) the .env file should have the following variables with respective values:
@@ -31,9 +37,12 @@ MONGODB_ATLAS_USERNAME = mongodb atlas user name\
 MONGODB_ATLAS__PASSWORD = mongodb atlas password\
 secretKey = abcdefghtvnfknfkn
 
-vi) The database used for the backend is MongoDB. I have used mongodb atlas to store the data but if you want to install mongodb on your local system, then mongodb needs to be installed and the mongodb server has to be in the running state so that the backend can store the data.\
-Vii) all the configuration for the backend is present inside the appConfig.js file which is present inside the config folder. The api version, the url of the mongodb atlas being used, port number for the nodejs app is all specified within this file.\
-Viii) All the other major functionalities are present inside the 'src' folder. The 'src' folder consist of the routes, controllers, models, middlewares and libraries.\
+vi) The database used for the backend is MongoDB. I have used mongodb atlas to store the data but if you want to install mongodb on your local system, then mongodb needs to be installed and the mongodb server has to be in the running state so that the backend can store the data.
+
+Vii) all the configuration for the backend is present inside the appConfig.js file which is present inside the config folder. The api version, the url of the mongodb atlas being used, port number for the nodejs app is all specified within this file.
+
+Viii) All the other major functionalities are present inside the 'src' folder. The 'src' folder consist of the routes, controllers, models, middlewares and libraries.
+
 ix) The entry point for running the nodejs app is server.js.
 
 Running the cmd "node server.js" will start the nodejs app
@@ -66,13 +75,16 @@ x) This output signifies that everything is running perfectly at the backend lev
 
 
 ## 2. frontend
-i) i) The frontend of the project is built using React.js.\
+i) The frontend of the project is built using React.js
+
 ii) To run the frontend code need to install the dependency package. To install the dependency packages go to the todo_app_gist folder which is created after cloning the github and then traverse to the frontend folder. Type the cmd "npm install"
 
 Example: todo_app_gist/frontend$ npm install
 
-iii) This will install all the packages and a node_modules folder will be created inside the frontend folder.\
-iv) .env file has to be created inside the frontend folder. the file has to be created with the name as '.env' inside the frontend folder.\
+iii) This will install all the packages and a node_modules folder will be created inside the frontend folder.
+
+iv) .env file has to be created inside the frontend folder. the file has to be created with the name as '.env' inside the frontend folder.
+
 v) the .env file should have the following variables with respective values:
 
 ## example of the values
@@ -88,7 +100,9 @@ if the environment is production the backend api being used will be the one host
 Vii) if the environment is set to development then the BASE_URL will the localhost backend server being run on the system. that is : "http://localhost:3001/api/v1"
 
 viii) All the generic components are defined inside the components folder present inside the "src" folder.
+
 ix) All the css as specified in the index.css file
+
 x) The entry point for running the react app is App.js. Go inside the frontend folder within the todo_App_gist folder and run the above the command. The web page will be displayed on the browser. Running the cmd "npm start" will start the Reactjs app.
 
 the output got after executing this is.
