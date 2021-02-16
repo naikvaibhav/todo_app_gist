@@ -3,7 +3,9 @@ A MERN stack todo application with feature to upload todo as a secret gist.
 
 To check the hosted solution go to : http://todo.naikvaibhav.online
 
-To check the backend api go to http://apitodo.naikvaibhav.online/api/v1
+To check the hosted backend api go to http://apitodo.naikvaibhav.online/api/v1
+
+The postman collection link to download all the api's used for this backend project: https://www.getpostman.com/collections/628522e186c2f56d2883
 
 Download the github code using the cmd "git clone https://github.com/naikvaibhav/todo_app_gist.git"
 
